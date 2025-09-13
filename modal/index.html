@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/modal/style.css" />
+    <title>MODAL-Mini-Project</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <nav class="navigation">
+          <ul>
+            <li>خانه</li>
+            <li>فروشگاه</li>
+            <li>درباره ما</li>
+            <li>تماس با ما</li>
+          </ul>
+        </nav>
+        <button id="login-btn" type="submit" class="btn navigation-btn">
+          ورود/ثبت نام
+        </button>
+      </div>
+    </header>
+
+    <div class="login-modal">
+      <div class="overlay"></div>
+      <div class="login-form">
+        <h2>ورود/ثبت نام</h2>
+        <img src="/modal/close-x-svgrepo-com.svg" alt="" class="svgimg" />
+        <form class="form-container">
+          <label for="fname">نام کاربری</label>
+          <input type="text" id="fname" class="form-input" name="firstname" />
+          <label for="password">پسورد </label>
+          <input type="text" id="password" class="form-input" name="password" />
+          <button type="submit" class="btn">ورود</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="/modal/script.js"></script>
+</html>

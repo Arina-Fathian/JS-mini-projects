@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fdfdfd;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+.nav-container {
+  background-color: #fdfdfd;
+  margin: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.navigation ul {
+  color: rgb(2, 2, 2);
+  font-size: 2rem;
+  list-style-type: none;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.navigation li:hover {
+  color: rgb(153, 253, 4);
+}
+.btn {
+  border: none;
+  background-color: rgb(153, 253, 4);
+  padding: 1rem;
+  border-radius: 7px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.navigation-btn {
+  justify-self: center;
+  align-self: flex-end;
+  margin-right: auto;
+}
+
+.btn:hover {
+  background-color: rgb(133, 222, 0);
+  color: rgb(0, 0, 0);
+}
+
+.login-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+.login-modal.active {
+  pointer-events: auto;
+}
+
+.login-modal .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  opacity: 0;
+  transition: 0.4 ease;
+}
+.login-modal.active .overlay {
+  opacity: 1;
+}
+.login-modal .login-form {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1rem;
+  /* border: 1px solid #000000; */
+  width: 25%;
+  height: 50%;
+  border-radius: 7px;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.2 ease;
+}
+.login-modal.active .login-form {
+  opacity: 1;
+}
+.login-form h2 {
+  font-size: 2.5rem;
+}
+
+.login-form .svgimg {
+  position: absolute;
+  width: 25px;
+  top: 20px;
+  left: 20px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  font-size: 1.5rem;
+  width: 70%;
+  height: 70%;
+}
+
+.form-input {
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid rgb(133, 222, 0);
+  border-radius: 7px;
+}
+
+.form-container .btn {
+  padding: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  border-radius: 7px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
