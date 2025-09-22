@@ -7,10 +7,26 @@
     <title>birthday</title>
   </head>
   <body>
-    <main class="main">
-      <label for="date-of-birth">تاریخ تولد شما:</label>
-      <input type="date" id="date-of-birth" />
-      <button class="btn">حساب کن!</button>
+    <main class="main cotainer">
+      <div class="tabs-content">
+        <label for="date-of-birth" class="content active" data-content="1"
+          >سن شما:</label
+        >
+        <label for="date-of-birth" class="content" data-content="2"
+          >روز به تولد شما:</label
+        >
+        <label for="date-of-birth" class="content" data-content="3"
+          >تاریخ شمسی :</label
+        >
+      </div>
+      <span class="current-text"> </span>
+
+      <input type="date" id="date-of-birth" min="1920-12-31" />
+      <div class="tabs-btn">
+        <button class="btn age-btn" data-btn="1">محاسبه سن</button>
+        <button class="btn day-btn" data-btn="2">روز به تولد</button>
+        <button class="btn date-btn" data-btn="3">تاریخ به شمسی</button>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>
